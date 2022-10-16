@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Josefin+Sans:ital,wght@0,400;1,200&display=swap');
+
+:root{
+    --color-primario:#1B48AB;
+    --color-secundario:#151417;
+    --color-terciario:#6042B1;
+    --color-opcional:white;
+    /*fuentes*/
+    --fuente-principal:'Comforter Brush',cursive;
+    --fuente-secundaria:'Josefin Sans', sans-serif;
+}
+
+body{
+    /* Created with https://www.css-gradient.com */
+    background: #1B48AB;
+    background: -webkit-linear-gradient(left, #1B48AB, #6042B1);
+    background: -moz-linear-gradient(left, #1B48AB, #6042B1);
+    background: linear-gradient(to right, #1B48AB, #6042B1);
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+/*header*/
+
+.titulo{
+    text-align: center;
+    color: var(--color-opcional);
+    padding: 30px;  
+    
+}
+h1{
+    font-size: 3rem;
+    font-family: var(--fuente-principal);
+}
+h1+p{
+    font-family: var(--fuente-secundaria);
+    font-weight: 200;
+    font-style: oblique;
+}
+
+/*main*/
+
+main{    
+    margin: 0px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contenedor-carta{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-secundario);
+    height: 600px;
+    border: 0px;
+}
+
+.ctitulo{
+    text-align: center;
+    font-size: 18rem;
+    color: var(--color-opcional);
+}
+.name{
+    text-align: center;
+    font-family: var(--fuente-secundaria);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.descripcion{
+    padding-top: 10px;
+    font-family: var(--fuente-secundaria);
+}
+li{
+    list-style:square;
+}
+.card-body{
+    color: var(--color-opcional);
+}
+
+.btn-dark{
+    align-self: center;
+    border-radius: 0px;
+    border-color: var(--color-opcional);
+    margin-bottom: 20px;
+}
+.img{
+    position: relative;
+    z-index: 1;
+}
+.cierre{
+    width: 30px;
+    align-self: flex-end;
+    border-radius: 5px 0px 0px 0px;
+    border: 0px;
+    font-size:x-small;
+    background-color: var(--color-secundario);
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+}
+
+/*footer*/
+
+.pie{
+    text-align: center;
+    font-size: x-small;
+    color: var(--color-opcional);
+}
